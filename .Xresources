@@ -1,0 +1,54 @@
+! ------- Xresources config file -----
+! author: James Lamine
+!------------------------------------
+
+! Xcursor ----- Set the mouse cursor ----
+  
+  Xcursor.theme: 	hicolor
+  !Xcursor.size:	 16
+
+! Colors --------------------------------
+!! Greenish theme
+*color0:       #000000
+*color8:       #666666
+!! DarkRed + Red
+*color1:       #b45151
+*color9:       #fe8686
+!! DarkGreen + Green
+*color2:       #8ba574
+*color10:      #a5dca5
+!! DarkYellow + Yellow
+*color3:       Khaki3
+*color11:      #efe58b
+!! DarkBlue + Blue
+*color4:       #2797d8
+*color12:      #86cdea
+!! DarkMangenta + Mangenta
+*color5:       #aa6eaf
+*color13:      #b698b8
+!!DarkCyan + Cyan
+*color6:       #418179
+*color14:      #71bebe
+!! LightGrey + White
+*color7:       #bebebe
+*color15:      #ffffff
+
+! Xft font settings --------------------
+
+  Xft.dpi:			96
+  Xft.antialias:	true
+  Xft.rgba:			rgb
+  Xft.hinting:		true
+  Xft.hintstyle:	hintmedium
+
+! urxvt settings ---------------------
+
+  URxvt.font:		xft:monospace:size=9
+  URxvt.boldFont:	xft:monospace:bold:size=9
+  URxvt.background:	Black
+  URxvt.foreground: rgb:50/a1/65	
+  					!rgb:Bf/ff/bd
+  URxvt.fading:		22
+  URxvt.fadeColor:  Black	
+  URxvt.saveLines:	512	
+  URxvt.pointerBlankDelay: 2

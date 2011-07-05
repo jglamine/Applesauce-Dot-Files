@@ -1,0 +1,46 @@
+File: program-list.txt
+
+List of Installed Programs 
+----------------------------
+
+mtpaint 	- MS paint-like program - image editor
+abiword 	- lightweight wordprocessor
+libreoffice	- office suite - fork of openoffice
+geany		- text editor with some IDE features
+sxiv		- image viewer for X11
+
+audacity	- audio editor
+gimp		- photo editor
+inkscape	- raster svg image editor
+
+xmonad		- window manager
+xmobar		- top info bar for xmonad
+
+cower		- AUR search and download helper
+cower -s	- search for a package
+cower -d	- download a package
+
+wicd		- wireless network manager
+wicd-client -n	- wicd interface: must use the -n option
+wicd-curses	- curses wicd interface
+
+pacman		- package manager
+pacman -Syu	- sync and update the entire system
+
+elinks		- advanced command line web browser
+lynks		- command line web browser
+
+evince		- PDF viewer
+cmus		- ncurses audio player
+chromium	- web browser from google
+leafpad		- notepad clone from LXDE
+lxappearance	- lxde gtk theme manager
+urxvt		- virtual terminal
+
+yaourt		- AUR and pacman wraper - AUR helper
+makepkg		- make a package from AUR
+tar -xvzf	- extract a tar.gz file
+
+frotz		- z-code emulator - plays text based adventures / interactive fiction games
+zsnes		- snes super nintendo emulator
+visualboyadvance	- GBA game boy advanced emulator
