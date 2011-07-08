@@ -1,4 +1,7 @@
 #! /usr/bin/env python
+#
+# James Lamine
+#
 # Script to copy dot files to a local git repository and push that repo to git-hub
 # The list of files to backup is saved in a text file
 #
@@ -39,8 +42,6 @@ for path in listFile:
 	except OSError:
 		pass
 	
-	print ("Dest Time:", destMtime, "Source Time:", sourceMtime)
-
 	# only copy files if the source is newer than the destination file
 	if destMtime < sourceMtime:
 		shutil.copy(path, gitRepoPath)
