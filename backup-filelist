@@ -9,5 +9,5 @@
 /home/james/.xmonad/xmonad.hs
 /etc/rc.conf
 /home/james/program-list.txt
-/home/james/code/python/backup-filelist
-/home/james/code/python/git-backup.py
+/home/james/code/python/git-backup/backup-filelist
+/home/james/code/python/git-backup/git-backup.py
