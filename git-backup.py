@@ -35,6 +35,8 @@ for path in listFile:
 	except OSError:
 		pass
 	
+	print ("Dest Time:", destMtime, "Source Time:", sourceMtime)
+
 	# only copy files if the source is newer than the destination file
 	if destMtime < sourceMtime:
 		shutil.copy(path, gitRepoPath)
