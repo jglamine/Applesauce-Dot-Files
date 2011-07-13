@@ -19,6 +19,9 @@ xsetroot -cursor_name left_ptr
 # set desktop background
 # xloadimage -onroot -fullscreen -background black ~/pictures/wallpapers/earth.jpg
 
+# set keyboard repeate delay rate
+xset r rate 200 20
+
 # Run clipboard manager
 parcellite -n -d &
 
