@@ -30,24 +30,25 @@ for path in listFile:
 	# initialize variables
 	sourceMtime = 900000000000
 	destMtime = 0
-	try:
-		# os.stat will throw OSError if the file doesn't exits
+
+	if os.path.exists(path):
 		sourceMtime = os.stat(path).st_mtime
 		
 		# find the name of the destination file
 		fnameMatch = re.search(r"[^/]*$", path)
 		if fnameMatch:
 			destPath = gitRepoPath + fnameMatch.group()
-			destMtime = os.stat(destPath).st_mtime
-
+			if os.path.exists(destPath):
+				destMtime = os.stat(destPath).st_mtime
+		
 		# only copy files if the source is newer than the destination file
 		if destMtime < sourceMtime:
 			shutil.copy(path, gitRepoPath)
 			print (path, "-->", destPath)
 			changesMade = True # Changes were made to the git repo
-	except OSError:
+	else:
 		# The source file doesn't exist
-		print ("Error copying: ", path, ": Make sure the file exists")
+		print ("Error: ", path, "Does not exits")
 		pass
 
 # Close the filelist file
