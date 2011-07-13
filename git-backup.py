@@ -47,7 +47,7 @@ for path in listFile:
 			changesMade = True # Changes were made to the git repo
 	except OSError:
 		# The source file doesn't exist
-		print ("Error copying: ", path, "Make sure the file exists")
+		print ("Error copying: ", path, ": Make sure the file exists")
 		pass
 
 # Close the filelist file
