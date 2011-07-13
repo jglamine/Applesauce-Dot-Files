@@ -6,7 +6,7 @@
 # The list of files to backup is saved in a text file
 #
 # It would make more sense to write this as a bash script
-# 	Mostly I just wanted more practice with python
+# 	but I wanted more practice with writing Python code
 
 import sys, shutil, subprocess, re, os
 
@@ -57,12 +57,16 @@ if changesMade:
 	
 	# Run git commands
 	## git add
+	print( "\nRunning command: git add\n")
+
 	gitReturnCode = subprocess.call(["git", "--git-dir=" + gitRepoPath + ".git","--work-tree=" + gitRepoPath, "add", gitRepoPath + "*"])
 	if gitReturnCode != 0:
 		print ("Error: Unable to run git command: git add")
 		sys.exit(1)
 	
 	## git commit
+	print ( "\nRunning command: git commit\n")
+
 	(gitReturnCode, gitOutput) = subprocess.getstatusoutput("git --git-dir=" + gitRepoPath + ".git --work-tree=" + gitRepoPath + " commit -m Commit")
 	if gitReturnCode != 0:
 		print (gitOutput)
@@ -76,6 +80,8 @@ if changesMade:
 		sys.exit(1)
 	
 	## git push origin master
+	print ("\nRunning command: git push origin master\n")
+
 	gitReturnCode = subprocess.call(["git", "--git-dir=" + gitRepoPath + ".git","--work-tree=" + gitRepoPath, "push", "origin", "master"])
 	if gitReturnCode != 0:
 		print ("Error: Unable to run git command: git push origin master")
