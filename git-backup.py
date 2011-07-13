@@ -39,15 +39,15 @@ for path in listFile:
 		if fnameMatch:
 			destPath = gitRepoPath + fnameMatch.group()
 			destMtime = os.stat(destPath).st_mtime
-		
+
+		# only copy files if the source is newer than the destination file
+		if destMtime < sourceMtime:
+			shutil.copy(path, gitRepoPath)
+			print (path, "-->", destPath)
+			changesMade = True # Changes were made to the git repo
 	except OSError:
+		# The source file doesn't exist
 		pass
-	
-	# only copy files if the source is newer than the destination file
-	if destMtime < sourceMtime:
-		shutil.copy(path, gitRepoPath)
-		print (path, "-->", destPath)
-		changesMade = True # Changes were made to the git repo
 
 # Close the filelist file
 listFile.close()
