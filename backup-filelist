@@ -13,3 +13,5 @@
 /home/james/code/python/git-backup/git-backup.py
 /home/james/code/python/git-backup/git-backup.sh
 /home/james/.git-backup.log
+/var/spool/cron/james
+/home/james/.pacmanlist
