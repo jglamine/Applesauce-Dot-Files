@@ -90,6 +90,6 @@ if changesMade:
 	
 #if changes weren't made
 else:
-	print ("Nothing to backup")
+	print ("\nNothing to backup")
 
-print ("Backup Finished")
+print ("\nBackup Finished")
