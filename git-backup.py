@@ -58,7 +58,7 @@ if changesMade:
 	
 	# Run git commands
 	## git add
-	print( "\nRunning command: git add\n")
+	print( "\nRunning command: git add")
 
 	gitReturnCode = subprocess.call(["git", "--git-dir=" + gitRepoPath + ".git","--work-tree=" + gitRepoPath, "add", gitRepoPath + "*"])
 	if gitReturnCode != 0:
@@ -66,7 +66,7 @@ if changesMade:
 		sys.exit(1)
 	
 	## git commit
-	print ( "\nRunning command: git commit\n")
+	print ( "\nRunning command: git commit")
 
 	(gitReturnCode, gitOutput) = subprocess.getstatusoutput("git --git-dir=" + gitRepoPath + ".git --work-tree=" + gitRepoPath + " commit -m Commit")
 	if gitReturnCode != 0:
@@ -81,7 +81,7 @@ if changesMade:
 		sys.exit(1)
 	
 	## git push origin master
-	print ("\nRunning command: git push origin master\n")
+	print ("\nRunning command: git push origin master")
 
 	gitReturnCode = subprocess.call(["git", "--git-dir=" + gitRepoPath + ".git","--work-tree=" + gitRepoPath, "push", "origin", "master"])
 	if gitReturnCode != 0:
@@ -90,4 +90,6 @@ if changesMade:
 	
 #if changes weren't made
 else:
-	print ("Done! Nothing to backup")
+	print ("Nothing to backup")
+
+print ("Backup Finished")
