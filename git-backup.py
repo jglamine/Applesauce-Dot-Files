@@ -14,7 +14,7 @@ import sys, shutil, subprocess, re, os
 listFname = "backup-filelist"
 gitRepoPath = "/home/james/git-repos/Applesauce-Dot-Files/"
 
-print( "git-backup.py -- copies and commits files to a git repository\n- James Lamine\n\nCopying files:")
+print( "git-backup.py -- copies and commits files to a git repository\n- James Lamine\n\nCopying file(s):")
 # Open the file list.
 try:
 	listFile = open(listFname)
