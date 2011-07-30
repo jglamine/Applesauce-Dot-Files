@@ -40,6 +40,7 @@ urxvt		- virtual terminal
 yaourt		- AUR and pacman wraper - AUR helper
 makepkg		- make a package from AUR
 tar -xvzf	- extract a tar.gz file
+tar xvjf	- extract a tar.bz2 file
 
 frotz				- z-code emulator - plays text based adventures / interactive fiction games
 zsnes				- snes super nintendo emulator
@@ -47,6 +48,7 @@ visualboyadvance	- GBA game boy advanced emulator
 frozen-bubble		- adictive penguin themed game
 ninvaders			-ncurses based space invaders clone
 nethack		- single player dungen exploration game.
+greed		- eat a game feild until you run out of room.
 
 BSD Games
 
@@ -93,7 +95,9 @@ Role playing:
 adventure - an exploration game
 battlestar - a tropical adventure game
 phantasia - an interterminal fantasy game
+
 "Screensavers":
+
 rain - animated raindrops display
 worms - animate worms on a display terminal
 
