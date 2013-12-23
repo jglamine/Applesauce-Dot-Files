@@ -27,7 +27,7 @@ alias shutdown='sudo poweroff'
 alias poweroff='sudo poweroff'
 alias reboot='sudo reboot'
 alias suspend='sudo pm-suspend'
-alias pm-suspend='suod pm-suspend'
+alias pm-suspend='sudo pm-suspend'
 
 ## Aliases for programs
 alias image='sxiv'
